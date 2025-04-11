@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  web:
+    build: .  # Constrói a imagem a partir do Dockerfile
+    ports:
+      - "5000:5000"  # Expõe a porta 5000 do container
+    networks:
+      - sis01  # Conecta à rede sis01
+    depends_on:
+      - db  # Depende do serviço db
+
+  db:
+    image: mysql:5.7  # Usa a imagem do MySQL 5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: password  # Define a senha do root
+      MYSQL_DATABASE: cadastro_db  # Cria o banco de dados
+    volumes:
+      - db_data:/var/lib/mysql  # Persiste os dados do MySQL
+    ports:
+      - "3309:3309"
+    networks:
+      - sis01  # Conecta à rede sis01
+
+volumes:
+  db_data:  # Volume para persistir os dados do MySQL
+
+networks:
+  sis01:
+    driver: bridge  # Cria uma rede bridge chamada sis01
