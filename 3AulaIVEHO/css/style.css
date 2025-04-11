@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+.container {
+  width: 45%;
+  margin: 5px auto;
+  border: none;
+  border-radius: 10px;
+  padding: 1%;
+  background: rgba(255, 255, 255, 0.645); /* Fundo semitransparente */
+  backdrop-filter: blur(10px); /* Efeito de vidro fosco */
+  -webkit-backdrop-filter: blur(10px); /* Suporte para WebKit */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+  max-width: 100%;
+}
+button{
+  width: 20%;
+  background-color: rgb(0, 204, 245);
+  border: none;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+}
+.sensor-log{
+  border: none;
+  border-radius: 5px;
+}
+.log-entry{
+  border: none;
+  border-radius: 5px;
+}
