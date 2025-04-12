@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    display: inline-block;
+    margin: 10px;
+    width: 250px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.valor {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+.status-presenca {
+    font-weight: bold;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.presenca-true {
+    background-color: green;
+}
+
+.presenca-false {
+    background-color: red;
+}

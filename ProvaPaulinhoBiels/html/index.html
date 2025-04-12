@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Monitoramento de Sensores</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js CDN -->
+</head>
+<body>
+    <h1>Monitoramento de Sensores</h1>
+
+    <div class="card">
+        <h2>Temperatura</h2>
+        <div id="temperatura" class="valor">-- °C</div>
+    </div>
+
+    <div class="card">
+        <h2>Umidade</h2>
+        <div id="umidade" class="valor">-- %</div>
+    </div>
+
+    <div class="card">
+        <h2>Presença</h2>
+        <div id="presenca" class="valor status-presenca">--</div>
+    </div>
+
+    <div style="margin-top: 50px;">
+        <canvas id="graficoTemperatura" width="400" height="150"></canvas>
+        <canvas id="graficoUmidade" width="400" height="150"></canvas>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
